@@ -1,0 +1,14 @@
+A: int = 6427 + 1725 = 8152
+B: int = (6971 * 3925) - 95 = 27361080
+C: double 79 + 12 / 5 = 81.40
+D: double = 3640.0 / 107.9 = 33.73
+E: int = (22 / 3) * 3 = 21
+F: int = 22 / (3 * 3) = 2
+G: double = 22 / (3 * 3) = 2.44
+H: double = 22 / 3 * 3 = 22.00
+I: double = (22.0 / 3) * 3.0 = 22.00
+J: int = 22.0 / (3 * 3.0) = 2
+K: double = 22.0 / 3.0 * 3.0 = 22.00
+L: The area of a circle with circumference 23.567 = 44.198
+M: 14 feet = 4.27 meters.
+N: 76 degrees Fahrenheit = 24.44 Celsius.
