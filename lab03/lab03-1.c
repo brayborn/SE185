@@ -1,9 +1,9 @@
 /*----------------------------------------------------------------------------
 -		    SE 185: Lab 03 - Introduction to the DS4 and Functions	    	 -
--	Name:																	 -
-- 	Section:																 -
--	NetID:																     -
--	Date:																	 -
+-	Name:Ben Rayborn														 -
+- 	Section:1																 -
+-	NetID:brayborn														     -
+-	Date:2.9.2020																	 -
 -----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------
@@ -16,6 +16,9 @@
 -	                            Prototypes                                   -
 -----------------------------------------------------------------------------*/
 double magnitude(double x, double y, double z);
+int minutes(int t);
+int seconds(int t);
+int milliseconds(int t);
 
 /*----------------------------------------------------------------------------
 -	                                Notes                                    -
@@ -37,18 +40,19 @@ int main(int argc, char *argv[])
         scanf("%d, %lf, %lf, %lf", &t, &ax, &ay, &az);
 
         /* CODE SECTION 0 */
-        printf("Echoing output: %d, %lf, %lf, %lf\n", t, ax, ay, az);
+		//t = t / 1000;
+        //printf("Echoing output: %8.3d, %7.4lf, %7.4lf, %7.4lf\n", t, ax, ay, az);
 
 
         /* 	CODE SECTION 1 */
-        // printf("At %d ms, the acceleration's magnitude was: %lf\n", t, magnitude(ax, ay, az));
+        //printf("At %d ms, the acceleration's magnitude was: %lf\n", t, magnitude(ax, ay, az));
 
 
         /* 	CODE SECTION 2 */
-        /*
+        
             printf("At %d minutes, %d seconds, and %d milliseconds it was: %lf\n",
             minutes(t), seconds(t), milliseconds(t), magnitude(ax, ay, az));
-        */
+        
     }
 
     return 0;
@@ -67,6 +71,20 @@ int main(int argc, char *argv[])
 double magnitude(double x, double y, double z)
 {
     // Step 8, uncomment and modify the next line
-    // return sqrt( );
+    // return sqrt(pow(x, 2) + pow(y, 2) + pow(z, 2));
 }
 
+int minutes(int t)
+{
+	return (t / 60000);
+}
+
+int seconds(int t)
+{
+	return ((t / 1000) - ((t / 60000) * 60));
+}
+
+int milliseconds(int t)
+{
+	return (t % 1000);
+}

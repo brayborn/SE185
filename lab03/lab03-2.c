@@ -1,9 +1,9 @@
 /*----------------------------------------------------------------------------
 -		    SE 185: Lab 03 - Introduction to the DS4 and Functions	    	 -
--	Name:																	 -
-- 	Section:																 -
--	NetID:																     -
--	Date:																	 -
+-	Name:Ben Rayborn														 -
+- 	Section:1																 -
+-	NetID:brayborn														     -
+-	Date:2.9.2020															 -
 -----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------
@@ -15,7 +15,7 @@
 /*----------------------------------------------------------------------------
 -	                            Prototypes                                   -
 -----------------------------------------------------------------------------*/
-
+int total(int t, int c, int x, int o);
 
 /*----------------------------------------------------------------------------
 -	                                Notes                                    -
@@ -28,9 +28,17 @@
 -----------------------------------------------------------------------------*/
 int main(int argc, char *argv[])
 {
+	int t;
+	int c;
+	int x;
+	int o;
+
 
     while (1)
     {
+
+		scanf("%d, %d, %d, %d", &t, &c, &x, &o);
+		printf("%d buttons are being pressed.\n", total);
 
     }
 
@@ -38,4 +46,8 @@ int main(int argc, char *argv[])
 }
 
 /* Put your functions here, and be sure to put prototypes above. */
+int total(int t, int c, int x, int o)
+{
+	return (t);
+}
 
